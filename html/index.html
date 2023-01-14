@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="calculator">
+        <input type="text" id="display" disabled>
+        <div id="buttons">
+          <button id="clear" onclick="clearScreen()">C</button>
+          <button id="backspace" onclick="backspace()">&larr;</button>
+          <button id="divide" onclick="addToScreen('/')">&divide;</button>
+          <button id="multiply" onclick="addToScreen('*')">&times;</button>
+          <button id="seven" onclick="addToScreen(7)">7</button>
+          <button id="eight" onclick="addToScreen(8)">8</button>
+          <button id="nine" onclick="addToScreen(9)">9</button>
+          <button id="subtract" onclick="addToScreen('-')">-</button>
+          <button id="four" onclick="addToScreen(4)">4</button>
+          <button id="five" onclick="addToScreen(5)">5</button>
+          <button id="six" onclick="addToScreen(6)">6</button>
+          <button id="add" onclick="addToScreen('+')">+</button>
+          <button id="one" onclick="addToScreen(1)">1</button>
+          <button id="two" onclick="addToScreen(2)">2</button>
+          <button id="three" onclick="addToScreen(3)">3</button>
+          <button id="equals" onclick="calculate()">=</button>
+          <button id="zero" onclick="addToScreen(0)">0</button>
+          <button id="decimal" onclick="addToScreen('.')">.</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
